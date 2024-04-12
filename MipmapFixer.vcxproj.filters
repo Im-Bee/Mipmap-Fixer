@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Private">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Public">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="External">
+      <UniqueIdentifier>{53a42a0d-d446-4c6d-91b9-c09cca330abc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\Lodepng">
+      <UniqueIdentifier>{b7156ff0-540d-401a-960d-e8481bcc2d22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\Lodepng\Public">
+      <UniqueIdentifier>{6acfd456-7692-41da-aff3-187d41f3cfef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\Lodepng\Private">
+      <UniqueIdentifier>{9a953cc7-0b5e-4f21-8129-2e7f2e4e1a09}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Main.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClCompile Include="External\Lodepng\lodepng.cpp">
+      <Filter>External\Lodepng\Private</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="External\Lodepng\lodepng.h">
+      <Filter>External\Lodepng\Public</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
