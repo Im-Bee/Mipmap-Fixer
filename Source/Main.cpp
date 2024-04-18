@@ -254,4 +254,6 @@ int main(int argc, char* argv[])
 		savePath += file.path().filename().string();
 		SavePixels(myImg, savePath.c_str());
 	}
+
+	cout << "There is nothing else to do" << endl;
 }
